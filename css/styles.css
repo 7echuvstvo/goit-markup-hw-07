@@ -99,7 +99,7 @@ p {
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: #FFFFFF;
     z-index: 999;
 
     transform: translateX(100%);
@@ -117,19 +117,80 @@ p {
     color: #fff;
 }
 
+
+
+.mobile-menu,
+.link {
+    display: block;
+    /* padding: 10px; */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    text-decoration: none;
+}
+
 .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.mobile-menu .link {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+/* ----------- ----------- */
+.toggle-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* padding: 80px 0 40px 40px; */
+
 }
 
+.toggle-menu-contacts {
+    margin-bottom: 48px;
+}
+
+.menu-contacts {
+    margin-bottom: 40px;
+}
+
+.toggle-menu-active {
+    color: #404BBF;
+}
+
+.toggle-menu-tel {
+    min-width: 320px;
+
+
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin-bottom: 40px;
+}
+
+.menu-tel {
+    color: #4D5AE5;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.menu-mail {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 
 /* ==========------========== */
 .container {
@@ -343,7 +404,8 @@ p {
     background-position: center;
     background-size: cover;
     padding: 188px 0;
-    max-width: 1440px;
+    min-width: 320px;
+    /* max-width: 1440px; */
     margin: 0 auto;
     margin-bottom: 96px;
 }
@@ -374,6 +436,7 @@ p {
 }
 
 .hero-title {
+    min-width: 320px;
     max-width: 496px;
     text-align: center;
     font-weight: 700;
