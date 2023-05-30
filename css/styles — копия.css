@@ -66,7 +66,9 @@ p {
 
 /* ========== RESET ========== */
 
-
+.flex-block {
+    display: flex;
+}
 
 /* ========= HEADER ========= */
 
@@ -128,7 +130,7 @@ p {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 1px;
+    bottom: -1px;
     display: block;
     width: 100%;
     height: 4px;
@@ -183,28 +185,6 @@ p {
 }
 
 /* ========== HERO ========== */
-
-.container {
-    /* width: 1158px;
-    
-    padding: 0 15px; */
-    min-width: 320px;
-    max-width: 428px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-/* @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 736px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-} */
 
 .hero-section {
     background-color: #2E2F42;
@@ -269,12 +249,8 @@ p {
 /* ========== POSSIBILITIES ========== */
 .possibilities-section {
     margin: 0 auto;
-    /* width: 1158px; */
+    width: 1158px;
     padding: 120px 0;
-}
-
-.flex-block {
-    /* display: flex; */
 }
 
 .possibilities-list {
@@ -294,14 +270,8 @@ p {
     margin-bottom: 8px;
 }
 
-.section-description {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-}
-
 .possibilities-item {
-    width: 100%;
+    width: 264px;
 }
 
 .possibilities-item h3 {
@@ -317,63 +287,11 @@ p {
     margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    .possibilities-section {
-
-        padding: 96px 0;
-        max-width: 396px;
-    }
-
-    .possibilities-list {
-        display: block;
-        width: 100%;
-    }
-
-    .bg-rectangle {
-        display: none;
-    }
-
-    .list-title {
-        color: red;
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.12;
-        letter-spacing: 0.02em;
-        margin-bottom: 8px;
-    }
-
-    .section-description {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-
-    }
-
-    .possibilities-item:not(:last-child) {
-        margin-bottom: 72px;
-    }
-
-    .flex-block {
-        max-width: 396px;
-    }
-
+.section-description {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
-
-@media only screen and (min-width: 768px) {
-    .bg-rectangle {
-        display: none;
-    }
-
-    .possibilities-list {
-        flex-basis: calc((100% - 2 * 24px) / 3);
-    }
-}
-
-
-
-
 
 /* ===== SECTION BOTTOM ======= */
 .we-are {
@@ -386,19 +304,10 @@ p {
     flex-basis: calc((100% - 48px) / 3);
 }
 
-.section-bottom {
+.section-bottom.container {
     padding-bottom: 120px;
     margin: 0 auto;
-    min-width: 320px;
-    max-width: 480px;
-    /* width: 1158px; */
-}
-
-@media only screen and (min-width: 320px) {
-    .we-are {
-        flex-direction: column;
-        align-items: center;
-    }
+    width: 1158px;
 }
 
 .section-bottom-item {
@@ -973,8 +882,12 @@ p {
 }
 
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 
-
+}
 
 .portfolio-header {
     border-bottom: 1px solid #e7e9fc;
