@@ -195,7 +195,7 @@ p {
     color: #4D5AE5;
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .menu-mail {
@@ -277,7 +277,7 @@ p {
 }
 
 .header-section {
-    padding: 8px 0;
+    padding: 14px 0;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -330,7 +330,7 @@ p {
     gap: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .nav-list {
         display: none;
     }
@@ -420,7 +420,7 @@ p {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .address {
         display: none;
     }
@@ -454,11 +454,18 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
-    /* min-width: 320px; */
-    /* max-width: 1440px; */
+    padding: 112px 0;
+
+    max-width: 428px;
     margin: 0 auto;
-    margin-bottom: 96px;
+    /* margin-bottom: 96px; */
+    height: 432px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        min-width: 768px;
+    }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -518,7 +525,10 @@ p {
 
 @media only screen and (min-width: 1158px) {
     .hero-section {
-        margin-bottom: 120px;
+        /* margin-bottom: 120px; */
+        max-width: 1440px;
+        height: 600px;
+        padding: 188px;
     }
 }
 
@@ -603,7 +613,7 @@ p {
 .possibilities-section {
     margin: 0 auto;
     /* width: 1158px; */
-    /* padding: 96px 0; */
+    padding: 96px 0;
     margin-bottom: 96px;
 }
 
@@ -626,7 +636,7 @@ p {
 
 @media only screen and (min-width: 1158px) {
     .list-title {
-        text-align: center;
+        /* text-align: center; */
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 20px;
@@ -763,7 +773,7 @@ p {
 
 @media only screen and (min-width: 1158px) {
     .team-cards {
-        column-gap: 18px;
+        column-gap: 24px;
     }
 }
 
@@ -910,7 +920,7 @@ p {
 
 @media only screen and (max-width: 768px) {
     .customers-item {
-        flex-basis: calc((100% - 48px) / 2);
+        /* flex-basis: calc((100% - 48px) / 2); */
     }
 }
 
@@ -1262,6 +1272,7 @@ p {
 
     .footer-left-section {
         margin-bottom: 0;
+        margin-right: 120px;
     }
 }
 
